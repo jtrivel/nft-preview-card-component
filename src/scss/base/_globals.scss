@@ -1,0 +1,27 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: v.$primaryFont;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: v.$white;
+  background-color: v.$mainBg;
+  padding: 5rem 2rem;
+  @include m.tablet {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 37rem;
+  width: 95%;
+  margin-inline: auto;
+}
